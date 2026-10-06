@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" width="100%" height="100%">
+  <!-- Terracotta Sun Disk in Upper Right -->
+  <circle cx="134" cy="62" r="30" fill="#CA8C74" />
+
+  <!-- Tower 1: Background Sand Facet -->
+  <polygon points="82,88 94,66 94,142 82,126" fill="#CBB199" />
+
+  <!-- Tower 2: Tallest Skyscraper (Main Center-Left) -->
+  <!-- Left shaded wall -->
+  <polygon points="94,38 104,46 104,146 94,142" fill="#D8C2AD" />
+  <!-- Front crisp off-white face with dark outline -->
+  <polygon
+    points="94,38 115,54 115,150 104,146"
+    fill="#FDFBF7"
+    stroke="#2B1408"
+    stroke-width="2.4"
+    stroke-linejoin="round"
+  />
+  <!-- Inner vertical shadow / depth facet -->
+  <polygon
+    points="104,46 115,54 115,150 104,146"
+    fill="#36190B"
+    stroke="#2B1408"
+    stroke-width="1.6"
+  />
+
+  <!-- Tower 3: Middle Espresso Tower -->
+  <!-- Deep dark chocolate/espresso front wall -->
+  <polygon
+    points="114,68 123,76 123,154 114,150"
+    fill="#2B1408"
+    stroke="#2B1408"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+  <!-- Sand transition facet -->
+  <polygon points="108,74 114,80 114,150 108,146" fill="#BFA38D" />
+
+  <!-- Tower 4: Right Building (Front White Face with Outline) -->
+  <polygon
+    points="124,92 138,102 138,162 124,162"
+    fill="#FDFBF7"
+    stroke="#2B1408"
+    stroke-width="2.2"
+    stroke-linejoin="round"
+  />
+  <line x1="124" y1="92" x2="124" y2="162" stroke="#2B1408" stroke-width="2.2" />
+
+  <!-- Diagonal negative space / gap separating towers from the Y diagonal blade -->
+  <polygon points="80,118 126,163 129,160 83,115" fill="#F4EBDD" />
+
+  <!-- The "Y" Architectural Monogram -->
+  <!-- Top-left bracketed serif header -->
+  <path
+    d="M 16 60 C 26 59 46 59 70 60 C 60 66 54 74 46 84 C 36 72 26 62 16 60 Z"
+    fill="#8A431F"
+  />
+
+  <!-- Main sweeping Y body: Left arm, sweeping diagonal blade, vertical stem & base -->
+  <path
+    d="
+      M 16 60
+      C 35 60 52 64 64 78
+      C 76 92 88 112 126 161
+      L 121 163
+      L 95 128
+      L 95 155
+      C 95 160 98 162 106 163
+      L 106 165
+      L 68 165
+      L 68 163
+      C 76 162 78 160 78 155
+      L 78 124
+      C 78 115 73 103 64 93
+      C 53 80 39 70 25 63
+      C 20 61 17 60 16 60
+      Z
+    "
+    fill="#8A431F"
+  />
+
+  <!-- Horizontal Architectural Baseline / Plinth Line -->
+  <line
+    x1="68"
+    y1="165"
+    x2="148"
+    y2="165"
+    stroke="#8A431F"
+    stroke-width="2.2"
+    stroke-linecap="square"
+  />
+</svg>

@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ivory: #F4EBDD;
+    --color-sand: #E8D7C1;
+    --color-champagne: #D8B98A;
+    --color-bronze: #9A571F;
+    --color-antique-bronze: #7A3F15;
+    --color-espresso: #351A0D;
+    --color-deep-brown: #241108;
+    --color-olive: #4C4A2A;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #F4EBDD;
+    color: #351A0D;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Subtle architectural line animation */
+@keyframes drawArc {
+  from {
+    stroke-dashoffset: 200;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw {
+  stroke-dasharray: 200;
+  animation: drawArc 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Continuous elegant WhatsApp button animations */
+@keyframes whatsappRadar {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7), 0 10px 25px -3px rgba(18, 140, 126, 0.5);
+  }
+  50% {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0), 0 16px 32px -4px rgba(18, 140, 126, 0.6);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 10px 25px -3px rgba(18, 140, 126, 0.5);
+  }
+}
+
+@keyframes whatsappSonarWave {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes whatsappFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-whatsapp-beacon {
+  animation: whatsappRadar 2.4s infinite ease-in-out;
+}
+
+.animate-whatsapp-sonar {
+  animation: whatsappSonarWave 2.4s infinite cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.animate-whatsapp-float {
+  animation: whatsappFloat 3s infinite ease-in-out;
+}
+
+/* Smooth transitions */
+* {
+  border-color: #E8D7C1;
+}
+
+::selection {
+  background-color: #9A571F;
+  color: #F4EBDD;
+}

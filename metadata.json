@@ -1,0 +1,6 @@
+{
+  "name": "Yaman Estates",
+  "description": "Luxury Real Estate, Land, Investment, Interiors, and Construction brought together under one vision.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
